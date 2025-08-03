@@ -1,7 +1,11 @@
 // ==UserScript==
-// @name Demo Script
-// @version 0.0.1
-// @grant none
-// ==UserScript==
+// @name         Test user script
+// @description  I am a demo user script that you can safely delete (add any files to this folder and I will no longer automatically generate)
+// @author       Userscripts
+// @version      0.0.1
+// @match        *://*/*
+// @grant        none
+// @inject-into  content
+// ==/UserScript==
 
-document.body.innerHtml=`<div>Hello,world!</div>`;
+document.body.innerText="Hello,world";

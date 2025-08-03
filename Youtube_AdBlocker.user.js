@@ -3,7 +3,7 @@
 // @description  Youtubeの広告を倍速再生する
 // @author       ふぇあ
 // @version      0.0.1
-// @match        *://*.youtube.com/*
+// @match        *://www.youtube.com/*
 // @grant        none
 // @inject-into  content
 // ==/UserScript==

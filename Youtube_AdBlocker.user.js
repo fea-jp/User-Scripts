@@ -10,5 +10,8 @@
 
 const url=window.location.href
 if(url.match(/^(https?:\/\/)?(www\.|m\.)?(youtube|youtu|youtube-nocookie)\.(com|be)/)){
-  alert("Youtube!");
+  const isAdPlaying=()=>{
+    return !!document.querySelector("video");
+  };
+  if(isAdPlaying())alert("koukoku");
 }

@@ -11,7 +11,9 @@
 const url=window.location.href
 if(url.match(/^(https?:\/\/)?(www\.|m\.)?(youtube|youtu|youtube-nocookie)\.(com|be)/)){
   const isAdPlaying=()=>{
-    return !!document.querySelector("video");
+    const adShowing=document.querySelector(".ad-showing");
+    if(adshowing===null)return false;
+    return true
   };
-  if(isAdPlaying())alert("koukoku");
+  if(isAdPlaying){alert("koukoku");}
 }

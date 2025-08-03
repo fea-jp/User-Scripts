@@ -8,4 +8,7 @@
 // @inject-into  content
 // ==/UserScript==
 
-alert(window.location.href);
+const url=window.location.href
+if(url.match(/^(https?:\/\/)?(www\.|m\.)?(youtube|youtu|youtube-nocookie)\.(com|be)/)){
+  alert("Youtube!");
+}
